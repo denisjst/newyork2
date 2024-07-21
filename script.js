@@ -43,11 +43,11 @@ class Snowflake { // Renamed class
 }
 
 function createSnow() { // Renamed function
-    for (let i = 0; i < 200; i++) { // Fewer snowflakes for better visual
+    for (let i = 0; i < 5000; i++) { // Fewer snowflakes for better visual
         const x = Math.random() * canvas.width;
         const y = Math.random() * canvas.height;
-        const speed = Math.random() * 2 + 1; // Slower speed
-        const radius = Math.random() * 4 + 2; // Smaller radius
+        const speed = Math.random() * 15 + 1; // Slower speed
+        const radius = Math.random() * 2 + 2; // Smaller radius
         snowflakes.push(new Snowflake(x, y, speed, radius)); 
     }
 }
